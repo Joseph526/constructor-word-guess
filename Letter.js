@@ -2,7 +2,7 @@
 var Letter = function(char) {
     this.charLetter = char;
     this.charBool = false;
-    this.charReturn = function() {
+    this.toString = function() {
         if (this.charBool === true) {
             return this.charLetter;
         }
@@ -22,7 +22,7 @@ module.exports = Letter;
 // Testing
 var testLetter = new Letter("a");
 console.log(testLetter);
-console.log(testLetter.charReturn());
+console.log(testLetter + "");
 testLetter.charEval("a");
 console.log(testLetter);
-console.log(testLetter.charReturn());
+console.log(testLetter + "");
