@@ -17,15 +17,23 @@ var Word = function(wordInput) {
 
     // Function to display string of letters or underscores
     this.displayString = function() {
-        //
+        console.log(this.letterArr.join(" "));        
+    }
+
+    // Function to evaluate character guessed against letter objects
+    this.wordCharEval = function(char) {
+        for (var i = 0; i < this.letterArr.length; i++) {
+            //
+        }
     }
 }
 
 module.exports = Word;
 
 // Testing
-var testWord = new Word("peanut");
+var testWord = new Word("apple");
 console.log(testWord);
-console.log(testWord + " STRING TEST");
 testWord.buildArr();
 console.log(testWord.letterArr);
+console.log("========================");
+testWord.displayString();

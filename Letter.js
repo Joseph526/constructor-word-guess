@@ -20,9 +20,9 @@ var Letter = function(char) {
 module.exports = Letter;
 
 // Testing
-var testLetter = new Letter("a");
-console.log(testLetter);
-console.log(testLetter + "");
-testLetter.charEval("a");
-console.log(testLetter);
-console.log(testLetter + "");
+// var testLetter = new Letter("a");
+// console.log(testLetter);
+// console.log(testLetter + "");
+// testLetter.charEval("a");
+// console.log(testLetter);
+// console.log(testLetter + "");
