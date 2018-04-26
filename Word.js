@@ -21,9 +21,9 @@ var Word = function(wordInput) {
     }
 
     // Function to evaluate character guessed against letter objects
-    this.wordCharEval = function(char) {
+    this.wordCharEval = function(charGuessed) {
         for (var i = 0; i < this.letterArr.length; i++) {
-            //
+            this.letterArr[i].charEval(charGuessed);
         }
     }
 }
@@ -31,9 +31,12 @@ var Word = function(wordInput) {
 module.exports = Word;
 
 // Testing
-var testWord = new Word("apple");
+var testWord = new Word("peanut");
 console.log(testWord);
 testWord.buildArr();
 console.log(testWord.letterArr);
 console.log("========================");
+testWord.displayString();
+testWord.wordCharEval("a");
+console.log(testWord.letterArr);
 testWord.displayString();
